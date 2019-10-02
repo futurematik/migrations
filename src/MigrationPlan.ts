@@ -1,4 +1,4 @@
-import { Migration } from './migration';
+import { Migration } from './Migration';
 
 export interface MigrationPlan<MigrationType extends Migration<MigrationType>> {
   unknownApplied: string[];

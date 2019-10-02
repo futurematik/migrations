@@ -31,9 +31,15 @@
   ],
   "scripts": {
     "build": "yarn clean && yarn compile && yarn lint && yarn test",
-    "clean": "rm -rf lib",
-    "lint": "eslint \"src/**\"",
     "compile": "tsc",
+    "bumpfeat": "npm version minor && npm publish",
+    "bumpfix": "npm version patch && npm publish",
+    "bumpmajor": "npm version major && npm publish",
+    "clean": "rm -rf lib/",
+    "lint": "eslint \"src/**\"",
+    "postversion": "git push --follow-tags",
+    "prepare": "npm run build",
+    "preversion": "npm run build",
     "test": "jest"
   }
 }
