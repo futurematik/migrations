@@ -1,6 +1,6 @@
 {
   "name": "@fmtk/migrations",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Helper library for database migrations",
   "main": "lib/index.js",
   "repository": "https://github.com/futurematik/migrations",
